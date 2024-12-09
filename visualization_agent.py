@@ -8,7 +8,7 @@ class VisualizationAgent:
 
     def generate_image(self, city, weather_info):
         # Use OpenAI's DALL·E to generate an image of the clothing
-        prompt = f"Create an image of a lovely couple at the London street of {city} at the following weather forecast: {weather_info}"
+        prompt = f"Create an image of a lovely couple at the street of {city} at the following weather forecast: {weather_info}"
         response = self.client.images.generate(
             model="dall-e-3",
             #model="dall-e-2",
