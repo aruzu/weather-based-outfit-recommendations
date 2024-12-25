@@ -2,7 +2,9 @@ from weather_agent import WeatherAgent
 from clothing_advisor_agent import ClothingAdvisorAgent
 from visualization_agent import VisualizationAgent
 from flask import Flask, render_template, request
+from dotenv import load_dotenv  # Load environment variables from .env file
 
+load_dotenv()  # Load environment variables from .env file
 app = Flask(__name__)  # Initialize the Flask app
 
 class ContextSingleton:

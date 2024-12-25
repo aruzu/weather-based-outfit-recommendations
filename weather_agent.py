@@ -1,9 +1,6 @@
 import requests
 import datetime
 import os
-from dotenv import load_dotenv
-
-load_dotenv()  # Load environment variables from .env file    
 
 class WeatherAgent:
     def __init__(self):
