@@ -1,12 +1,18 @@
 import requests
 import datetime
 import os
+from dotenv import load_dotenv
+
+load_dotenv()  # Load environment variables from .env file    
 
 class WeatherAgent:
+    def __init__(self):
+        # Load API key from .env once during initialization
+        self.api_key = os.getenv("OPENWEATHERMAP_API_KEY")
+
     def get_weather(self, city):
         # Fetch weather data from OpenWeatherMap API
-        api_key = os.getenv("OPENWEATHERMAP_API_KEY")  # Load API key from .env
-        url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric'
+        url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={self.api_key}&units=metric'
         response = requests.get(url)
         data = response.json()
 
