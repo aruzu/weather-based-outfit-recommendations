@@ -50,7 +50,7 @@ The Weather and Clothing Advisor Application is a Flask-based web application th
    Enter the name of your city in the provided input field and submit to receive weather information and clothing recommendations.
 
 ## Application Screenshot
-![Screenshot](screenshot.jpg)  # or ![Screenshot](images/screenshot.jpg) if in a folder
+![Screenshot](screenshot.jpg)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
